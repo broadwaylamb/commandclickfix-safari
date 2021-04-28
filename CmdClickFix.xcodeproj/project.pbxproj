@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		87511EDE2639834700ACCFDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87511EDD2639834700ACCFDE /* AppDelegate.swift */; };
+		87511EE12639834700ACCFDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87511EDF2639834700ACCFDE /* Main.storyboard */; };
+		87511EE32639834700ACCFDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87511EE22639834700ACCFDE /* ViewController.swift */; };
+		87511EE52639834800ACCFDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87511EE42639834800ACCFDE /* Assets.xcassets */; };
+		87511EEC2639834800ACCFDE /* CmdClickFix Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 87511EEB2639834800ACCFDE /* CmdClickFix Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		87511EF12639834800ACCFDE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87511EF02639834800ACCFDE /* Cocoa.framework */; };
+		87511EF42639834800ACCFDE /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87511EF32639834800ACCFDE /* SafariWebExtensionHandler.swift */; };
+		87511EF72639834800ACCFDE /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 87511EF62639834800ACCFDE /* _locales */; };
+		87511EF92639834800ACCFDE /* images in Resources */ = {isa = PBXBuildFile; fileRef = 87511EF82639834800ACCFDE /* images */; };
+		87511EFB2639834800ACCFDE /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 87511EFA2639834800ACCFDE /* manifest.json */; };
+		87511EFD2639834800ACCFDE /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 87511EFC2639834800ACCFDE /* background.js */; };
+		87511EFF2639834800ACCFDE /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 87511EFE2639834800ACCFDE /* content.js */; };
+		87511F012639834800ACCFDE /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 87511F002639834800ACCFDE /* popup.html */; };
+		87511F032639834800ACCFDE /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 87511F022639834800ACCFDE /* popup.css */; };
+		87511F052639834800ACCFDE /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 87511F042639834800ACCFDE /* popup.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		87511EED2639834800ACCFDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87511ED12639834700ACCFDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87511EEA2639834800ACCFDE;
+			remoteInfo = "CmdClickFix Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		87511F0D2639834800ACCFDE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				87511EEC2639834800ACCFDE /* CmdClickFix Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		87511ED92639834700ACCFDE /* CmdClickFix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CmdClickFix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		87511EDC2639834700ACCFDE /* CmdClickFix.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CmdClickFix.entitlements; sourceTree = "<group>"; };
+		87511EDD2639834700ACCFDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		87511EE02639834700ACCFDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		87511EE22639834700ACCFDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		87511EE42639834800ACCFDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		87511EE62639834800ACCFDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87511EEB2639834800ACCFDE /* CmdClickFix Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CmdClickFix Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87511EF02639834800ACCFDE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		87511EF32639834800ACCFDE /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		87511EF62639834800ACCFDE /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		87511EF82639834800ACCFDE /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		87511EFA2639834800ACCFDE /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		87511EFC2639834800ACCFDE /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		87511EFE2639834800ACCFDE /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		87511F002639834800ACCFDE /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		87511F022639834800ACCFDE /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		87511F042639834800ACCFDE /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		87511F062639834800ACCFDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87511F072639834800ACCFDE /* CmdClickFix_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CmdClickFix_Extension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87511ED62639834700ACCFDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87511EE82639834800ACCFDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87511EF12639834800ACCFDE /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		87511ED02639834700ACCFDE = {
+			isa = PBXGroup;
+			children = (
+				87511EDB2639834700ACCFDE /* CmdClickFix */,
+				87511EF22639834800ACCFDE /* CmdClickFix Extension */,
+				87511EEF2639834800ACCFDE /* Frameworks */,
+				87511EDA2639834700ACCFDE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		87511EDA2639834700ACCFDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87511ED92639834700ACCFDE /* CmdClickFix.app */,
+				87511EEB2639834800ACCFDE /* CmdClickFix Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87511EDB2639834700ACCFDE /* CmdClickFix */ = {
+			isa = PBXGroup;
+			children = (
+				87511EDC2639834700ACCFDE /* CmdClickFix.entitlements */,
+				87511EDD2639834700ACCFDE /* AppDelegate.swift */,
+				87511EDF2639834700ACCFDE /* Main.storyboard */,
+				87511EE22639834700ACCFDE /* ViewController.swift */,
+				87511EE42639834800ACCFDE /* Assets.xcassets */,
+				87511EE62639834800ACCFDE /* Info.plist */,
+			);
+			path = CmdClickFix;
+			sourceTree = "<group>";
+		};
+		87511EEF2639834800ACCFDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87511EF02639834800ACCFDE /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		87511EF22639834800ACCFDE /* CmdClickFix Extension */ = {
+			isa = PBXGroup;
+			children = (
+				87511EF32639834800ACCFDE /* SafariWebExtensionHandler.swift */,
+				87511F062639834800ACCFDE /* Info.plist */,
+				87511F072639834800ACCFDE /* CmdClickFix_Extension.entitlements */,
+				87511EF52639834800ACCFDE /* Resources */,
+			);
+			path = "CmdClickFix Extension";
+			sourceTree = "<group>";
+		};
+		87511EF52639834800ACCFDE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				87511EF62639834800ACCFDE /* _locales */,
+				87511EF82639834800ACCFDE /* images */,
+				87511EFA2639834800ACCFDE /* manifest.json */,
+				87511EFC2639834800ACCFDE /* background.js */,
+				87511EFE2639834800ACCFDE /* content.js */,
+				87511F002639834800ACCFDE /* popup.html */,
+				87511F022639834800ACCFDE /* popup.css */,
+				87511F042639834800ACCFDE /* popup.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		87511ED82639834700ACCFDE /* CmdClickFix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87511F0E2639834800ACCFDE /* Build configuration list for PBXNativeTarget "CmdClickFix" */;
+			buildPhases = (
+				87511ED52639834700ACCFDE /* Sources */,
+				87511ED62639834700ACCFDE /* Frameworks */,
+				87511ED72639834700ACCFDE /* Resources */,
+				87511F0D2639834800ACCFDE /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87511EEE2639834800ACCFDE /* PBXTargetDependency */,
+			);
+			name = CmdClickFix;
+			productName = CmdClickFix;
+			productReference = 87511ED92639834700ACCFDE /* CmdClickFix.app */;
+			productType = "com.apple.product-type.application";
+		};
+		87511EEA2639834800ACCFDE /* CmdClickFix Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87511F0A2639834800ACCFDE /* Build configuration list for PBXNativeTarget "CmdClickFix Extension" */;
+			buildPhases = (
+				87511EE72639834800ACCFDE /* Sources */,
+				87511EE82639834800ACCFDE /* Frameworks */,
+				87511EE92639834800ACCFDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CmdClickFix Extension";
+			productName = "CmdClickFix Extension";
+			productReference = 87511EEB2639834800ACCFDE /* CmdClickFix Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87511ED12639834700ACCFDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					87511ED82639834700ACCFDE = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					87511EEA2639834800ACCFDE = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 87511ED42639834700ACCFDE /* Build configuration list for PBXProject "CmdClickFix" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 87511ED02639834700ACCFDE;
+			productRefGroup = 87511EDA2639834700ACCFDE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87511ED82639834700ACCFDE /* CmdClickFix */,
+				87511EEA2639834800ACCFDE /* CmdClickFix Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		87511ED72639834700ACCFDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87511EE52639834800ACCFDE /* Assets.xcassets in Resources */,
+				87511EE12639834700ACCFDE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87511EE92639834800ACCFDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87511EFD2639834800ACCFDE /* background.js in Resources */,
+				87511F032639834800ACCFDE /* popup.css in Resources */,
+				87511F012639834800ACCFDE /* popup.html in Resources */,
+				87511EF92639834800ACCFDE /* images in Resources */,
+				87511EFB2639834800ACCFDE /* manifest.json in Resources */,
+				87511EF72639834800ACCFDE /* _locales in Resources */,
+				87511EFF2639834800ACCFDE /* content.js in Resources */,
+				87511F052639834800ACCFDE /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87511ED52639834700ACCFDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87511EE32639834700ACCFDE /* ViewController.swift in Sources */,
+				87511EDE2639834700ACCFDE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87511EE72639834800ACCFDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87511EF42639834800ACCFDE /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		87511EEE2639834800ACCFDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87511EEA2639834800ACCFDE /* CmdClickFix Extension */;
+			targetProxy = 87511EED2639834800ACCFDE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		87511EDF2639834700ACCFDE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87511EE02639834700ACCFDE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		87511F082639834800ACCFDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		87511F092639834800ACCFDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		87511F0B2639834800ACCFDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "CmdClickFix Extension/CmdClickFix_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CmdClickFix Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaskiewiczs.CmdClickFix.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		87511F0C2639834800ACCFDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "CmdClickFix Extension/CmdClickFix_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CmdClickFix Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaskiewiczs.CmdClickFix.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		87511F0F2639834800ACCFDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CmdClickFix/CmdClickFix.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CmdClickFix/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaskiewiczs.CmdClickFix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		87511F102639834800ACCFDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CmdClickFix/CmdClickFix.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CmdClickFix/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaskiewiczs.CmdClickFix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87511ED42639834700ACCFDE /* Build configuration list for PBXProject "CmdClickFix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87511F082639834800ACCFDE /* Debug */,
+				87511F092639834800ACCFDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87511F0A2639834800ACCFDE /* Build configuration list for PBXNativeTarget "CmdClickFix Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87511F0B2639834800ACCFDE /* Debug */,
+				87511F0C2639834800ACCFDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87511F0E2639834800ACCFDE /* Build configuration list for PBXNativeTarget "CmdClickFix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87511F0F2639834800ACCFDE /* Debug */,
+				87511F102639834800ACCFDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 87511ED12639834700ACCFDE /* Project object */;
+}
