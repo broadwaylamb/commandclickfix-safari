@@ -1,10 +1,10 @@
 {
     "extension_name": {
-        "message": "CmdClickFix Extension",
+        "message": "Command-Click Fix",
         "description": "The display name for the extension."
     },
     "extension_description": {
-        "message": "This is CmdClickFix Extension. You should tell us what your extension does here.",
+        "message": "Makes Command-Click open a new tab on pages that don't do it properly.",
         "description": "Description of what the extension does."
     }
 }

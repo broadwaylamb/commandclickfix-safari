@@ -11,17 +11,14 @@
 		87511EE12639834700ACCFDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87511EDF2639834700ACCFDE /* Main.storyboard */; };
 		87511EE32639834700ACCFDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87511EE22639834700ACCFDE /* ViewController.swift */; };
 		87511EE52639834800ACCFDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87511EE42639834800ACCFDE /* Assets.xcassets */; };
-		87511EEC2639834800ACCFDE /* CmdClickFix Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 87511EEB2639834800ACCFDE /* CmdClickFix Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		87511EEC2639834800ACCFDE /* CmdClickFixExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 87511EEB2639834800ACCFDE /* CmdClickFixExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		87511EF12639834800ACCFDE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87511EF02639834800ACCFDE /* Cocoa.framework */; };
 		87511EF42639834800ACCFDE /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87511EF32639834800ACCFDE /* SafariWebExtensionHandler.swift */; };
-		87511EF72639834800ACCFDE /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 87511EF62639834800ACCFDE /* _locales */; };
 		87511EF92639834800ACCFDE /* images in Resources */ = {isa = PBXBuildFile; fileRef = 87511EF82639834800ACCFDE /* images */; };
 		87511EFB2639834800ACCFDE /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 87511EFA2639834800ACCFDE /* manifest.json */; };
-		87511EFD2639834800ACCFDE /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 87511EFC2639834800ACCFDE /* background.js */; };
 		87511EFF2639834800ACCFDE /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 87511EFE2639834800ACCFDE /* content.js */; };
-		87511F012639834800ACCFDE /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 87511F002639834800ACCFDE /* popup.html */; };
-		87511F032639834800ACCFDE /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 87511F022639834800ACCFDE /* popup.css */; };
-		87511F052639834800ACCFDE /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 87511F042639834800ACCFDE /* popup.js */; };
+		87511F14263988C300ACCFDE /* jquery-1.4.2.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 87511F13263988C300ACCFDE /* jquery-1.4.2.min.js */; };
+		87511F16263989D400ACCFDE /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 87511F15263989D400ACCFDE /* _locales */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +38,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				87511EEC2639834800ACCFDE /* CmdClickFix Extension.appex in Embed App Extensions */,
+				87511EEC2639834800ACCFDE /* CmdClickFixExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,19 +53,16 @@
 		87511EE22639834700ACCFDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		87511EE42639834800ACCFDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87511EE62639834800ACCFDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		87511EEB2639834800ACCFDE /* CmdClickFix Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CmdClickFix Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87511EEB2639834800ACCFDE /* CmdClickFixExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CmdClickFixExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		87511EF02639834800ACCFDE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		87511EF32639834800ACCFDE /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
-		87511EF62639834800ACCFDE /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
 		87511EF82639834800ACCFDE /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
 		87511EFA2639834800ACCFDE /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
-		87511EFC2639834800ACCFDE /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
 		87511EFE2639834800ACCFDE /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
-		87511F002639834800ACCFDE /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
-		87511F022639834800ACCFDE /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
-		87511F042639834800ACCFDE /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
 		87511F062639834800ACCFDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87511F072639834800ACCFDE /* CmdClickFix_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CmdClickFix_Extension.entitlements; sourceTree = "<group>"; };
+		87511F13263988C300ACCFDE /* jquery-1.4.2.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery-1.4.2.min.js"; sourceTree = "<group>"; };
+		87511F15263989D400ACCFDE /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				87511EDB2639834700ACCFDE /* CmdClickFix */,
-				87511EF22639834800ACCFDE /* CmdClickFix Extension */,
+				87511EF22639834800ACCFDE /* CmdClickFixExtension */,
 				87511EEF2639834800ACCFDE /* Frameworks */,
 				87511EDA2639834700ACCFDE /* Products */,
 			);
@@ -104,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				87511ED92639834700ACCFDE /* CmdClickFix.app */,
-				87511EEB2639834800ACCFDE /* CmdClickFix Extension.appex */,
+				87511EEB2639834800ACCFDE /* CmdClickFixExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,7 +124,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		87511EF22639834800ACCFDE /* CmdClickFix Extension */ = {
+		87511EF22639834800ACCFDE /* CmdClickFixExtension */ = {
 			isa = PBXGroup;
 			children = (
 				87511EF32639834800ACCFDE /* SafariWebExtensionHandler.swift */,
@@ -138,20 +132,17 @@
 				87511F072639834800ACCFDE /* CmdClickFix_Extension.entitlements */,
 				87511EF52639834800ACCFDE /* Resources */,
 			);
-			path = "CmdClickFix Extension";
+			path = CmdClickFixExtension;
 			sourceTree = "<group>";
 		};
 		87511EF52639834800ACCFDE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				87511EF62639834800ACCFDE /* _locales */,
+				87511F15263989D400ACCFDE /* _locales */,
 				87511EF82639834800ACCFDE /* images */,
 				87511EFA2639834800ACCFDE /* manifest.json */,
-				87511EFC2639834800ACCFDE /* background.js */,
 				87511EFE2639834800ACCFDE /* content.js */,
-				87511F002639834800ACCFDE /* popup.html */,
-				87511F022639834800ACCFDE /* popup.css */,
-				87511F042639834800ACCFDE /* popup.js */,
+				87511F13263988C300ACCFDE /* jquery-1.4.2.min.js */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -178,9 +169,9 @@
 			productReference = 87511ED92639834700ACCFDE /* CmdClickFix.app */;
 			productType = "com.apple.product-type.application";
 		};
-		87511EEA2639834800ACCFDE /* CmdClickFix Extension */ = {
+		87511EEA2639834800ACCFDE /* CmdClickFixExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 87511F0A2639834800ACCFDE /* Build configuration list for PBXNativeTarget "CmdClickFix Extension" */;
+			buildConfigurationList = 87511F0A2639834800ACCFDE /* Build configuration list for PBXNativeTarget "CmdClickFixExtension" */;
 			buildPhases = (
 				87511EE72639834800ACCFDE /* Sources */,
 				87511EE82639834800ACCFDE /* Frameworks */,
@@ -190,9 +181,9 @@
 			);
 			dependencies = (
 			);
-			name = "CmdClickFix Extension";
+			name = CmdClickFixExtension;
 			productName = "CmdClickFix Extension";
-			productReference = 87511EEB2639834800ACCFDE /* CmdClickFix Extension.appex */;
+			productReference = 87511EEB2639834800ACCFDE /* CmdClickFixExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -226,7 +217,7 @@
 			projectRoot = "";
 			targets = (
 				87511ED82639834700ACCFDE /* CmdClickFix */,
-				87511EEA2639834800ACCFDE /* CmdClickFix Extension */,
+				87511EEA2639834800ACCFDE /* CmdClickFixExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -245,14 +236,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87511EFD2639834800ACCFDE /* background.js in Resources */,
-				87511F032639834800ACCFDE /* popup.css in Resources */,
-				87511F012639834800ACCFDE /* popup.html in Resources */,
+				87511F14263988C300ACCFDE /* jquery-1.4.2.min.js in Resources */,
 				87511EF92639834800ACCFDE /* images in Resources */,
 				87511EFB2639834800ACCFDE /* manifest.json in Resources */,
-				87511EF72639834800ACCFDE /* _locales in Resources */,
+				87511F16263989D400ACCFDE /* _locales in Resources */,
 				87511EFF2639834800ACCFDE /* content.js in Resources */,
-				87511F052639834800ACCFDE /* popup.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +269,7 @@
 /* Begin PBXTargetDependency section */
 		87511EEE2639834800ACCFDE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 87511EEA2639834800ACCFDE /* CmdClickFix Extension */;
+			target = 87511EEA2639834800ACCFDE /* CmdClickFixExtension */;
 			targetProxy = 87511EED2639834800ACCFDE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -416,9 +404,9 @@
 		87511F0B2639834800ACCFDE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "CmdClickFix Extension/CmdClickFix_Extension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = CmdClickFixExtension/CmdClickFix_Extension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "CmdClickFix Extension/Info.plist";
+				INFOPLIST_FILE = CmdClickFixExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -435,9 +423,9 @@
 		87511F0C2639834800ACCFDE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "CmdClickFix Extension/CmdClickFix_Extension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = CmdClickFixExtension/CmdClickFix_Extension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "CmdClickFix Extension/Info.plist";
+				INFOPLIST_FILE = CmdClickFixExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -458,6 +446,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = CmdClickFix/CmdClickFix.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CmdClickFix/Info.plist;
@@ -479,6 +468,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = CmdClickFix/CmdClickFix.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CmdClickFix/Info.plist;
@@ -505,7 +495,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		87511F0A2639834800ACCFDE /* Build configuration list for PBXNativeTarget "CmdClickFix Extension" */ = {
+		87511F0A2639834800ACCFDE /* Build configuration list for PBXNativeTarget "CmdClickFixExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				87511F0B2639834800ACCFDE /* Debug */,
